@@ -1,0 +1,26 @@
+Level 0
+ssh -p 2220 bandit0@bandit.labs.overthewire.org               attempts to ssh into bandit0, shows ssh.
+password is bandit0
+
+Level 0->1
+ls             shows the documents in the directory, easy demonstration of ls
+cat readme             gives the password, shows how to use cat
+exit            leaves bandit0 so we can log into bandit1
+ssh -p 2220 bandit1@bandit.labs.overthewire.org              attempts to ssh into bandit1
+password is ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
+Level 1->2
+ls       shows the file -
+cat ./-    prints out the content of the file -, necessary to include path so - isn't treated as an argument
+exit
+ssh -p 2220 bandit2@bandit.labs.overthewire.org
+password is 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
+Level 2->3
+ls    shows the file "spaces in this filename"
+cat "spaces in this filename"      prints out the content of the file, necessary to put it in quotes to use whole name as an argument instead of 4 seperate ones
+exit
+ssh -p 2220 bandit3@bandit.labs.overthewire.org
+password is MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+Level 3->4

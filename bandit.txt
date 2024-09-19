@@ -51,5 +51,26 @@ ssh -p 2220 bandit6@bandit.labs.overthewire.org
 password is HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 
 Level 6->7
+cd ..      move to the home directory
+cd ..      move further back in the directories
+find -size 33c -user bandit7 -group bandit6 2>/dev/null          find the file matching website specifications without a whole lot of permission denied messages hiding it
+cat ./var/lib/dpkg/info/bandit7.password          prints out the found file
+exit
+ssh -p 2220 bandit7@bandit.labs.overthewire.org
+password is morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 
+Level 7->8
+ls
+grep millionth data.txt          finds the line containing millionth in data.txt and prints it out
+exit
+ssh -p 2220 bandit8@bandit.labs.overthewire.org
+password is dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
+Level 8->9
+ls
+sort data.txt | uniq -u          sorts the data.txt file, which moves all identical lines adjacent to each other. Pipes that to uniq -u, which prints out only the unique lines (no adjacent duplicates)
+exit
+ssh -p 2220 bandit9@bandit.labs.overthewire.org
+password is 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+Level 9->10

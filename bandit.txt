@@ -74,3 +74,17 @@ ssh -p 2220 bandit9@bandit.labs.overthewire.org
 password is 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 
 Level 9->10
+ls
+strings data.txt            prints out all strings in the file. Not very clean, but it works. Only one thing looks like a password from the printed information
+exit
+ssh -p 2220 bandit10@bandit.labs.overthewire.org
+password is FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+Level 10->11
+ls
+base64 -d data.txt      prints out decoded base64 data
+exit
+ssh -p 2220 bandit11@bandit.labs.overthewire.org
+password is dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+Level 11->12

@@ -24,3 +24,32 @@ ssh -p 2220 bandit3@bandit.labs.overthewire.org
 password is MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 Level 3->4
+cd inhere      move into the inhere directory
+ls -a        reveal all files, including normally hidden ones
+cat ...Hiding-From-You      prints out content of the file, periods make it hidden from normal ls
+exit
+ssh -p 2220 bandit4@bandit.labs.overthewire.org
+password is 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+Level 4->5
+ls        shows the directory inhere
+cd inhere      move into the directory inhere
+ls          show several files
+file ./*    shows the file type of every file in the current directory. Much cleaner than doing each individually.
+cat ./-file07      prints out the content of the file, starts with a - so necessary to incllude the path
+exit
+ssh -p 2220 bandit5@bandit.labs.overthewire.org
+password is 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+Level 5->6
+ls
+cd inhere
+find -readable -size 1033c      finds the file specified by the website
+cat ./maybehere07/.file2
+exit
+ssh -p 2220 bandit6@bandit.labs.overthewire.org
+password is HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+Level 6->7
+
+

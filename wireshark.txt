@@ -1,0 +1,34 @@
+Sam Ederington
+
+1	0.000000000	192.168.163.128	132.163.97.4	TCP	74	41144 → 13 [SYN] Seq=0 Win=32120 Len=0 MSS=1460 SACK_PERM TSval=3647486880 TSecr=0 WS=128
+2	0.027467400	132.163.97.4	192.168.163.128	TCP	60	13 → 41144 [SYN, ACK] Seq=0 Ack=1 Win=64240 Len=0 MSS=1460
+3	0.027584227	192.168.163.128	132.163.97.4	TCP	54	41144 → 13 [ACK] Seq=1 Ack=1 Win=32120 Len=0
+
+My kali computer uses port 13
+
+The client needs a port since both sides need to be able to send and receive information.
+
+4	0.052982836	132.163.97.4	192.168.163.128	DAYTIME	105	DAYTIME Response
+
+SYN means synchronization, and is used to synchronize communication between the client and server.
+ACK means aknowledgement of the latest received package. This is used to make sure both client and server know what information the other has received.
+
+5	0.053282284	192.168.163.128	132.163.97.4	TCP	54	41144 → 13 [FIN, ACK] Seq=1 Ack=53 Win=32068 Len=0
+My client initiated the termination (Marked by FIN). It comes from my IP address and goes to the IP address of the server.
+
+
+========= HTTP =========
+2 TCP connections, the 3-way handshake was done twice.
+
+7	0.021874255	192.168.163.128	172.233.221.124	HTTP	408	GET /index.html HTTP/1.1 
+This is the HTTP request from my computer that seems to be for the HTML website
+
+11	0.150323400	192.168.163.128	172.233.221.124	HTTP	381	GET /jeff-square-colorado.jpg HTTP/1.1 
+Get jeff-square-colorado.jpeg makes me pretty confident this was when it was requested.
+
+
+Questions:
+When the client requests the jpegs, is that an "oh these are missing, I'll ask for them" or does the server say "If you are missing these, tell me".
+
+38	0.230629979	172.233.221.124	192.168.163.128	TCP	31561	[TCP Window Full] 80 → 45640 [PSH, ACK] Seq=42194 Ack=678 Win=64240 Len=31507 [TCP segment of a reassembled PDU]
+This line was red text on a black background, and said something about transmission control protocol. Did it run into an issue with corruption, or do you know what could have happened to it?

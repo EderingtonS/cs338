@@ -1,0 +1,7 @@
+Sam "Eve" Ederington
+
+Diffie Hellman
+g=7, p=97, A=53, B=82
+g=7 shared secret is therefore between 0 and 7        (really small, bigger number would make this harder).
+82**X%97 = 53**Y%7
+Y = 2, X = 14, Shared Secret = 2  (brute force trying numbers until they lined up, wouldn't work well with bigger numbers).

@@ -5,3 +5,17 @@ g=7, p=97, A=53, B=82
 g=7 shared secret is therefore between 0 and 7        (really small, bigger number would make this harder).
 82**X%97 = 53**Y%7
 Y = 2, X = 14, Shared Secret = 2  (brute force trying numbers until they lined up, wouldn't work well with bigger numbers).
+
+RSA
+e=13, n=162991
+message: [17645, 100861, 96754, 160977, 120780, 90338, 130962, 74096, 128123, 25052, 119569, 39404, 6697, 82550, 126667, 151824, 80067, 75272, 72641, 43884, 5579, 29857, 33449, 46274,
+59283, 109287, 22623, 84902, 6161, 109039, 75094, 56614, 13649, 120780, 133707, 66992, 128221]
+
+key: y**d%162991 where y is the char of the message
+e*d% lambda(n)=1
+lambda(n) = lcm(p, q)
+p*q = n where p and q are prime
+
+p and q are 419 and 389    (162991/prime number from wikipedia list, brute forced it starting at 673 and going down the list for some reason instead of starting somewhere in mid 400s).
+lcm of 419 and 389 is 162991 = lambda(n)      (lcm(419, 389))
+13*d%162991=1 so d is 

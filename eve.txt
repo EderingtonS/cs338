@@ -16,10 +16,48 @@ lambda(n) = lcm(p, q)
 p*q = n where p and q are prime
 
 p and q are 419 and 389    (162991/prime number from wikipedia list, brute forced it starting at 673 and going down the list for some reason instead of starting somewhere in mid 400s).
-lcm of 419 and 389 is 162991 = lambda(n)      (lcm(419, 389))
-13*d%162991=1 so d is 112840          (made a list, ran (162991*i+1)/13 through it and picked the first one that gave an int.
+lcm of 418 and 388 is 81092 = lambda(n)      (math.lcm(418, 388))
+13*d%81092=1 so d is 43665          (made a list, ran (81092*i+1)/13 through it and picked the first one that gave an int.
 
-key: y**112840%162991
+key: y**43665%162991
+17509 24946 8258 28514 11296 25448 25955 27424 29800 26995 8303 30068 11808 26740 29808 29498 12079 30583 30510 29557 29302 25961 27756 24942 25445 30561 29795 26670 26991 12064 21349 25888 31073 11296 16748 26979 25902
 
-129159 112495 124732 79436 121453 84368 7068 161221 150086 86011 5978 56406 65843 145034 71530 22749 70444 31879 15196 68470 72689 24664 67472 102912 34701 111330 45029 85167 19204 41414 12703 60584 162693 121453 89019 31611 70033
+'0x4465' De
+'0x6172' ar
+'0x2042' ' 'B
+'0x6f62' 
+'0x2c20'
+'0x6368'
+'0x6563'
+'0x6b20'
+'0x7468'
+'0x6973'
+'0x206f'
+'0x7574'
+'0x2e20'
+'0x6874'
+'0x7470'
+'0x733a'
+'0x2f2f'
+'0x7777'
+'0x772e'
+'0x7375'
+'0x7276'
+'0x6569'
+'0x6c6c'
+'0x616e'
+'0x6365'
+'0x7761'
+'0x7463'
+'0x682e'
+'0x696f'
+'0x2f20'
+'0x5365'
+'0x6520'
+'0x7961'
+'0x2c20'
+'0x416c'
+'0x6963'
+'0x652e'
+
                                     Uh oh! Those aren't ascii codes I recognize.

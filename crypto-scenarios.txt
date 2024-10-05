@@ -1,5 +1,10 @@
 Sam Ederington
 
-1. Alice and Bob use Diffie-Hellman to agree on a key K, which alice encrypts as AES(K, M) to send to Bob who decrypts the ciphertext C using AES(K, C).
+1. Alice and Bob use Diffie-Hellman to agree on a key K, which alice encrypts as AES(K, M) to send to Bob who decrypts the ciphertext C using AES(K, C). They secretly agree on a key and then use it to exchange a message Eve cannot decrypt.
 
-2. Alice takes the hash of her message H(M) and uses her public/secret key pair to encrypt that E(S_A, H(M)), which she concatenates to the end of her message and sends to Bob. Bob can decrypt the signature by using E(P_A, E(S_A, H(M))) to get H(M) and compare that against his attempt at hashing the message to see if there have been any changes.
+2. Alice takes the hash of her message H(M) and uses her secret key to encrypt that E(S_A, H(M)), which she concatenates to the end of her message and sends to Bob. Bob can decrypt the signature by using E(P_A, E(S_A, H(M))) to get H(M) and compare that against his attempt at hashing the message to see if there have been any changes.
+
+3. Alice and Bob use Diffie-Hellman to agree on a key K. She then prepares her message as AES(K, M). She then hashes her name H(A) and encrypts it with her secret key E(S_A, H(A)). She concatenates that onto the end of her AES encrypted message and sens them to Bob. Bob gets the message encoded in a way only the two of them can read, as well as a hashed name Alice that only she can send.
+
+4. Alice could claim that C was the pdf file for a contract with another group, and so they had the digital signature for that file together without having to figure out her secret key, and could impersonate her and send it.
+      Alice could claim that

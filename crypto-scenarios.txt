@@ -1,0 +1,5 @@
+Sam Ederington
+
+1. Alice and Bob use Diffie-Hellman to agree on a key K, which alice encrypts as AES(K, M) to send to Bob who decrypts the ciphertext C using AES(K, C).
+
+2. Alice takes the hash of her message H(M) and uses her public/secret key pair to encrypt that E(S_A, H(M)), which she concatenates to the end of her message and sends to Bob. Bob can decrypt the signature by using E(P_A, E(S_A, H(M))) to get H(M) and compare that against his attempt at hashing the message to see if there have been any changes.

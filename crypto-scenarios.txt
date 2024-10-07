@@ -14,4 +14,4 @@ Sam Ederington
 
 6. No, however, any future messages must come from the S_B paired with the P_B. Only Bob has his secret key S_B, so only he could use the key-pair with P_B to send the message.
 
-7. Mal can send her own public key in with "bob.com" to get certified for it, then since Alice needs to decrypt the certificate to get the public key, she would end up with Mal's public key. Mal could also 
+7. Mal can send her own public key in with "bob.com" to get certified for it, then she has everything she needs to present the certificate and pretend to be Bob to alice. Mal could also easily eavesdrop, as Bob receiving the certificate includes the P_B as plaintext.

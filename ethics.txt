@@ -1,0 +1,27 @@
+Sam Ederington
+
+First Scenario: InstaToonz Bug
+
+The main ethical quandry you face in this scenario is whether or not to report a bug that may land you in legal danger as well as affect your reputation.
+
+As the person who found the bug, reporting it is your decision. You also have the right to discuss potentially criminal activity with a lawyer, and they are forbidden from reporting it unlesss immediate danger would be caused.
+InstaToonz owns the product and has the rights to probably most of the information in it. 
+Customers of InstaToonz have the right to know that their information and privacy is at risk, potentially monetary if they have ever shared financial details with or over the app.
+
+I would like to know the terms and conditions of InstaToonz, specifically regarding its policies regarding information privacy as well as whether or not my discovering the bug may or may not be legal.
+
+Reporting the bug or not reporting the bug comes with consequences.
+If you report the bug, you can get sued and possibly found guilty or not, and your reputation may be damaged. If you don't report the bug, you may be constantly worried and guilty about your failure to take action.
+If you report the bug, InstaToonz can either resolve the bug or leave it. If they do the former, it might incur some costs somehow. If they leave it, they're at risk of it being publicized and incriminating them in failing to safeguard information and also cause them to loose their customer base.
+InstaToonz can also decide to sue you if you report the bug. If they do, they stand to risk their reputation and userbase again, but can potentially discourage other people from poking around in their systems.
+If you do not report the bug, InstaToonz may find it on their own and resolve it, but they are still at risk of losing huge amounts of customers if someone else also discovers and exploits the vulnerability.
+If you report it, customers will be safer either due to security changes or when you publicize the flaw in moving to other platforms. IF you don't report the bug, customers will still be at risk of all of their contacts and communications being observed and stolen.
+
+The ACM code of ethics obligates reporting of vulnerabilities, and if there is no attempt to fix them report the vulnerability to the public unless harm is likely greater than the knowledge. It ultimately says "Before reporting risks, a computing professional should carefully assess relevant aspects of the situation." Whether that is for the report to the organization or to the public or to either is guesswork.
+
+The first thing is to consult with a lawyer on the legality of your actions! They cannot report the crime, so doing so is perfectly safe, and gives you more information on how much harm you are risking by reporting.
+Secondly, reporting the bug should be done in a way to try and maintain your safety while doing so. If you do so confidentially without InstaToonz identifying you, you can act like one of the disclosure organizations and publicize the information after a few months.
+Hopefully, you don't get identified and don't get sued, or at least don't get sued. I would not expect a reward from reporting the bug given InstaToonz's policies and actions. If you do get sued, at least you have already made contact with relevant legal authorities.
+
+
+

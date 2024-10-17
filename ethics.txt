@@ -27,13 +27,20 @@ Hopefully, you don't get identified and don't get sued, or at least don't get su
 
 Second Scenario: Beerz Location
 
-The main ethical quandry you face is how to reconcile protecting customers' privacy with making a succesful (profitable) app.
+The main ethical quandry you face is how to reconcile protecting customers' privacy with making a succesful (profitable) app, and what actions an ethical lead developer can take to accomplish both.
 
-You are in charge of making the second update and scheduling the team to implement it (as long as you don't get fired). You
-Your CEO (and profit driven employees/investors/board members)
-Your CTO (and information-protection driven employees)
-Customers
+You are in charge of making the second update and scheduling the team to implement it (as long as you don't get fired). You also 
+Your CEO (and profit driven employees/investors/board members) have the right to give out work according to the interests of the company as they see them and fire employees if they feel necessary.
+Your CTO (and information-protection driven employees) have the right to perform work according to their interest in the subject, as well as quit if they feel their concerns are not being represented or whistle blow to consumers.
+Customers have the right for their infromation to be protected according to whatever terms they signed up with, and probably more depending on the contract.
 
+Possible actions include:
+Quitting publically and blowing the whistle on the CEO and corporate interests in the app, possibly killing the startup if privacy was a major starting point and getting you out of an enjoyable work environment and possibly red flagging you for potential employers.
+Maintain the development course as if the meeting didn't happen, focussing on properly implementing secure data storage and scrubbing algorithms, and not releasing the whole update until a course is confirmed. Probably won't lead to any positive or negative changes, but could lead to replacement if management gets too invested in immediately implementing the data selling scheme. Potentially involves selling user data if that is what management decides.
+Informing the 1.1 team of the vulnerability immediately and focussing on protecting existing data now and forever. Probably gets you replaced, but the app stays secure information wise, at least for now.
+Money is good! Kidnap the CEO and ransom her and the customer's information and threaten to whistleblow on the company! Turn to a life of crime, harming everybody (probably inclluding you) in the process!
 
+The ACM encourages supporting privacy of users of computing, and heavily discourages re-acquiring nonessential data. In fact, it suggests only minimal personal data should be collected in the first place.
 
-*Note you now know of a flaw in the location scrubbing algorithm. You need to get that fixed as well.
+Firstly, inform the 1.1 team and encourage they adjust their get request and storage to help protect user information privacy. This can be done off the record and should be done in order to properly secure the information, and if they were also brought in under the CTO or lead by them then they are low risk. Secondly, look over the terms and conditions and privacy notice for the application, and if there is even the slightest bit of concern over a contradiction, ask the legal team about it (if there is one) or let whoever is in charge of that know of your concern. Additionally, focus the team's time on implementing features that do not risk user privacy first, as well as security for in case it is attacked. Lastly, see if there is a way you can get the startup to survey users on the importance of their information privacy. Talk with team members about it, so that in the next meeting you can bring up lots of concerns and generally be annoying and stall about having to decide on it until later.
+This might get you fired, depending on the people surrounding you and the management, but I think there's a good chance it wouldn't.

@@ -25,3 +25,15 @@ Hopefully, you don't get identified and don't get sued, or at least don't get su
 
 
 
+Second Scenario: Beerz Location
+
+The main ethical quandry you face is how to reconcile protecting customers' privacy with making a succesful (profitable) app.
+
+You are in charge of making the second update and scheduling the team to implement it (as long as you don't get fired). You
+Your CEO (and profit driven employees/investors/board members)
+Your CTO (and information-protection driven employees)
+Customers
+
+
+
+*Note you now know of a flaw in the location scrubbing algorithm. You need to get that fixed as well.

@@ -8,13 +8,13 @@
 
 1.e. When the browser sends a GET request, it includes a header that sends the cookie associated with the site, in this case the theme=blue cookie. That tells the server to use the blue theme.
 
-1.f.
+1.f. When I request to change themes, the browser sends a GET request for the page again this time including a ?theme=blue in the file path. When the server responds, it sends back the site information with an additional Set-Cookie header which includes the cookie's new value and all the updated metadata.
 
-1.g.
+1.g. Triple clicking on the value area for the cookie let me set its value to red, and then refreshing the page gave me the red theme.
 
-1.h.
+1.h. Inspecting sends a GET request which includes a header that sends the coookie Theme="default". I can also edit the cookie before I send it, to change the value of the theme cookie to red.
 
-1.i.
+1.i. I was using Kali, so from my root directory into /.mozilla/firefox/at1bi6gy.default-esr there are some files with the name cookie. (cookies.sqlite and cookies.sqlite-wal). cookies.qslite is a SQLite database, wall cookies.sqlite-wal is empty.
 
 2.a.
 

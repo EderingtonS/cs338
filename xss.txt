@@ -1,16 +1,14 @@
-1.a.
+1.a. Immediately  on opening the site, I only see 1 cookie, with the name theme and a value of "default" for css338.jeffondich.com/. 
 
-1.b.
+1.b. When I switched the Theme to Blue, the cookie's value changed to "blue" as well. Additionally, the time created, expiration time, and last accessed time all were replaced with new values.
 
 1.c.
-
 
 1.d.
 
 1.e.
 
 1.f.
-
 
 1.g.
 

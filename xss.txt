@@ -2,11 +2,11 @@
 
 1.b. When I switched the Theme to Blue, the cookie's value changed to "blue" as well. Additionally, the time created, expiration time, and last accessed time all were replaced with new values.
 
-1.c.
+1.c. Inspecting sends a GET request which includes a header that sends the coookie Theme="default". I can also edit the cookie before I send it, to change colors that way. The reponse to changing cookies is a Set-Cookie header which is followed up with the coookie's name=new value for the cookie and then all the metadata with it. Same as the inspector, except the times are all different of course. There's also a Vary: Cookie header which is probably just saying the cookie has changed.
 
-1.d.
+1.d. My theme from specifically the normal browser (not burpsuite's) is still the same. Hooray!
 
-1.e.
+1.e. When the browser sends a GET request, it includes a header that sends the cookie associated with the site, in this case the theme=blue cookie. That tells the server to use the blue theme.
 
 1.f.
 

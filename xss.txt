@@ -16,7 +16,8 @@
 
 1.i. I was using Kali, so from my root directory into /.mozilla/firefox/at1bi6gy.default-esr there are some files with the name cookie. (cookies.sqlite and cookies.sqlite-wal). cookies.qslite is a SQLite database, wall cookies.sqlite-wal is empty.
 
-2.a.
+2.a. Moriarty creates an account with the forum first, and then creates a post as normal. As part of that post, he includes some html or javascript to get the display service to alter its normal behavior.
+When you open up Moriarty's second post, the browser sends a GET request to the server. As it loads the document and dsiplays everything up to the alert in his second post, it throws up the alert. Only once the alert is clicked away does it finish rendering the rest of the page.
 
 2.b.
 

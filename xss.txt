@@ -19,8 +19,8 @@
 2.a. Moriarty creates an account with the forum first, and then creates a post as normal. As part of that post, he includes some html or javascript to get the display service to alter its normal behavior.
 When you open up Moriarty's second post, the browser sends a GET request to the server. As it loads the document and dsiplays everything up to the alert in his second post, it throws up the alert. Only once the alert is clicked away does it finish rendering the rest of the page.
 
-2.b.
+2.b. You can use javascript to redirect the page anywhere you want, which happens frequently on bad sites: an advertiser redirects you fourty times or however many to some other webpage, so going back is annoying (can't just click the back arrow one, have to open up history and find the page) but in this constant redirection your attention is completely diverted, and if something else malicious is going on you probably won't notice.
 
-2.c.
+2.c. The browser records the logged in account whenever it communicates with the server, cross-site scripting would let you steal that information and try it against other sites to see if it matches with anything more valuable than a forum (though you can still use someone else's forum account for bad things too).
 
-2.d.
+2.d. Firstly, don't let people enter scripts in! I think there's only one way to enter javascript in <script> script goes here </script>, so block that. Secondly, have the browser only send the hashed username and password and keep communications encrypted (so update the forum to use https instead). Just following best practices would prevent that issue. Another thing to do would be to screen all posts someone makes before publishing them onto the site, and have professionals make sure they are safe (and can also make sure they follow the forum rules).

